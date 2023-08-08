@@ -1,0 +1,15 @@
+0000000000000000000000000000000000000000 a3242a4262bb84a3904c9da8a7ea5782e9873c6f Emerson Mendes <devmendesc@gmail.com> 1691436728 -0300	commit (initial): initial commit
+a3242a4262bb84a3904c9da8a7ea5782e9873c6f e79e540177a5058f6826d85e412425b5d2d2bb06 Emerson Mendes <devmendesc@gmail.com> 1691463727 -0300	commit: primeira parte do projeto front end
+e79e540177a5058f6826d85e412425b5d2d2bb06 d5a5b0a76f0e881b5b6f9750895f1eb7b6be9199 Emerson Mendes <devmendesc@gmail.com> 1691506316 -0300	commit: exclusão page list
+d5a5b0a76f0e881b5b6f9750895f1eb7b6be9199 a07984b3ef8f6cdd523cd911cf2295ffa11ff053 Emerson Mendes <devmendesc@gmail.com> 1691506342 -0300	commit: adicionada assets para header e home
+a07984b3ef8f6cdd523cd911cf2295ffa11ff053 c90f97abe21e90515a6652546d117e0b188adbce Emerson Mendes <devmendesc@gmail.com> 1691506367 -0300	commit: adicionado novos metodos de requisição
+c90f97abe21e90515a6652546d117e0b188adbce fe79ce1014069422d96bd863bd4450372afb5d56 Emerson Mendes <devmendesc@gmail.com> 1691506395 -0300	commit: alteração no padrao
+fe79ce1014069422d96bd863bd4450372afb5d56 b936cee1339abd9f14ef1199efc0a993bb00ceed Emerson Mendes <devmendesc@gmail.com> 1691506415 -0300	commit: finalização da carLIst
+b936cee1339abd9f14ef1199efc0a993bb00ceed 0e8921442501ce75286eb78d7d463a5bbfbf22d9 Emerson Mendes <devmendesc@gmail.com> 1691506565 -0300	commit: adicionado dialog padrão
+0e8921442501ce75286eb78d7d463a5bbfbf22d9 5660335b39ed25a6c5d305af412e981f1b4a8d6a Emerson Mendes <devmendesc@gmail.com> 1691506583 -0300	commit: alteração na edição de reserva
+5660335b39ed25a6c5d305af412e981f1b4a8d6a da608e3ffa7ffdae93ec6d8916ad7d9840694f49 Emerson Mendes <devmendesc@gmail.com> 1691506622 -0300	commit: alteração e inclusão do menu no header
+da608e3ffa7ffdae93ec6d8916ad7d9840694f49 94c98b3c85dd4e6d7882aa95264a7193aac0c406 Emerson Mendes <devmendesc@gmail.com> 1691506694 -0300	commit: tela home criada
+94c98b3c85dd4e6d7882aa95264a7193aac0c406 9e8333a67eeceec14ee56f4b162cb97c802739ca Emerson Mendes <devmendesc@gmail.com> 1691507701 -0300	commit: alterando modo para lazy loading para tentativa 1 de deploy
+9e8333a67eeceec14ee56f4b162cb97c802739ca 22d6cce8076fe8601be78f149bc34ebcd02c98e0 Emerson Mendes <devmendesc@gmail.com> 1691507850 -0300	commit: tentativa 2 deploy
+22d6cce8076fe8601be78f149bc34ebcd02c98e0 3089b6c50792ec02e5e978e717431800906a8df7 Emerson Mendes <devmendesc@gmail.com> 1691508706 -0300	commit: .
+3089b6c50792ec02e5e978e717431800906a8df7 fcd55052b1abf55a9a4892928e3f40cf8d78b19b Emerson Mendes <devmendesc@gmail.com> 1691511335 -0300	commit: Modificações para deploy tesntativa 3

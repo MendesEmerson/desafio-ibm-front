@@ -1,0 +1,65 @@
+<mat-card class="card-container">
+  <mat-toolbar color="primary" class="header">
+    <span>Editar Reserva</span>
+  </mat-toolbar>
+  <mat-card-content>
+    <form action="" [formGroup]="form" class="form-container">
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Nome" formControlName="nomeHospede" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <input
+          matInput
+          [matDatepicker]="dp1"
+          placeholder="Data inicial"
+          formControlName="dataInicio"
+          readonly
+        />
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="dp1"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #dp1></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <input
+          matInput
+          [matDatepicker]="dp2"
+          placeholder="Data final"
+          formControlName="dataFim"
+          readonly
+        />
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="dp2"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #dp2></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <input
+          matInput
+          placeholder="Quantidade de pessoas"
+          formControlName="quantidadePessoas"
+          type="number"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Status</mat-label>
+        <mat-select formControlName="status">
+          <mat-option value="Confirmado">Confirmado</mat-option>
+          <mat-option value="Pendente">Pendente</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions class="actions">
+    <button mat-flat-button color="primary" (click)="OpenDialog()">
+      Salvar
+    </button>
+    <button mat-stroked-button (click)="onCancel()">Cancelar</button>
+  </mat-card-actions>
+</mat-card>

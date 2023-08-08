@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <img class="image" [src]="svgImagePath" alt="Imagem SVG" />
+  <span class="example-spacer"></span>
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+    Menu
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="onNavigateToHome()">
+      <mat-icon>home</mat-icon>
+      Home
+    </button>
+    <button mat-menu-item (click)="onNavigateToList()">
+      <mat-icon>list</mat-icon>
+      Lista de reservas
+    </button>
+    <button mat-menu-item (click)="onNavigateToNew()">
+      <mat-icon>post_add</mat-icon>
+      Cadastrar nova reserva
+    </button>
+  </mat-menu>
+</mat-toolbar>

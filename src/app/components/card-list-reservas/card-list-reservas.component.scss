@@ -1,0 +1,98 @@
+.mat-tab-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.mat-tab {
+  width: 100%;
+}
+
+.example-card {
+  font-size: 18px;
+  width: 35%;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(238, 233, 233, 0.4);
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.date {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 10px;
+  padding: 5px;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  width: 45%;
+}
+
+.status-confirmado {
+  color: green;
+}
+
+.status-pendente {
+  color: yellow;
+}
+
+.status-cancelado {
+  color: red;
+}
+
+@media (max-width: 1000px) {
+  .example-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 850px) {
+  .example-card {
+    width: 55%;
+  }
+}
+
+@media (max-width: 650px) {
+  .example-card {
+    width: 65%;
+  }
+}
+
+@media (max-width: 500px) {
+  .example-card {
+    width: 85%;
+  }
+}

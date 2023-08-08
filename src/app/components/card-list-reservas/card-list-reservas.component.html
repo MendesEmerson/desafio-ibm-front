@@ -1,0 +1,117 @@
+<mat-tab-group animationDuration="2000ms" class="tab-bar">
+  <mat-tab class="tab" label="Confirmadas">
+    <mat-card
+      class="example-card mat-elevation-z8"
+      *ngFor="let item of confirmadas"
+    >
+      <mat-card-header class="card-header">
+        <div>
+          <mat-card-title>{{ item.nomeHospede }}</mat-card-title>
+        </div>
+        <div class="date">
+          <div class="check">
+            <mat-icon>flight_land</mat-icon>
+            Check in
+            <mat-card-subtitle>{{
+              item.dataInicio | date : "dd/MM/yyyy"
+            }}</mat-card-subtitle>
+          </div>
+
+          <div class="check">
+            <mat-icon>flight_takeoff</mat-icon>
+            Check out
+            <mat-card-subtitle>{{
+              item.dataFim | date : "dd/MM/yyyy"
+            }}</mat-card-subtitle>
+          </div>
+        </div>
+      </mat-card-header>
+      <mat-card-content class="content-card">
+        <p>{{ item.quantidadePessoas }} Pessoa(s)</p>
+        <p class="status-confirmado">{{ item.status }}</p>
+      </mat-card-content>
+      <mat-card-actions class="actions">
+        <button mat-raised-button (click)="editarReserva(item.id)">
+          Editar
+        </button>
+        <button mat-raised-button color="warn" (click)="OpenDialog(item.id)">Cancelar</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Pendentes">
+    <mat-card
+      class="example-card mat-elevation-z8"
+      *ngFor="let item of pendentes"
+    >
+      <mat-card-header class="card-header">
+        <div>
+          <mat-card-title>{{ item.nomeHospede }}</mat-card-title>
+        </div>
+        <div class="date">
+          <div class="check">
+            <mat-icon>flight_land</mat-icon>
+            Check in
+            <mat-card-subtitle>{{
+              item.dataInicio | date : "dd/MM/yyyy"
+            }}</mat-card-subtitle>
+          </div>
+
+          <div class="check">
+            <mat-icon>flight_takeoff</mat-icon>
+            Check out
+            <mat-card-subtitle>{{
+              item.dataFim | date : "dd/MM/yyyy"
+            }}</mat-card-subtitle>
+          </div>
+        </div>
+      </mat-card-header>
+      <mat-card-content class="content-card">
+        <p>{{ item.quantidadePessoas }} Pessoa(s)</p>
+        <p class="status-pendente">{{ item.status }}</p>
+      </mat-card-content>
+      <mat-card-actions class="actions">
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="editarReserva(item.id)"
+        >
+          Editar
+        </button>
+        <button mat-raised-button color="warn">Cancelar</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Canceladas">
+    <mat-card
+      class="example-card mat-elevation-z8"
+      *ngFor="let item of canceladas"
+    >
+      <mat-card-header class="card-header">
+        <div>
+          <mat-card-title>{{ item.nomeHospede }}</mat-card-title>
+        </div>
+        <div class="date">
+          <div class="check">
+            <mat-icon>flight_land</mat-icon>
+            Check in
+            <mat-card-subtitle>{{
+              item.dataInicio | date : "dd/MM/yyyy"
+            }}</mat-card-subtitle>
+          </div>
+
+          <div class="check">
+            <mat-icon>flight_takeoff</mat-icon>
+            Check out
+            <mat-card-subtitle>{{
+              item.dataFim | date : "dd/MM/yyyy"
+            }}</mat-card-subtitle>
+          </div>
+        </div>
+      </mat-card-header>
+      <mat-card-content class="content-card">
+        <p>{{ item.quantidadePessoas }} Pessoa(s)</p>
+        <p class="status-cancelado">{{ item.status }}</p>
+      </mat-card-content>
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>
