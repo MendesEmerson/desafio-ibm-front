@@ -2,6 +2,7 @@ import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 import * as moment from 'moment';
 import { ReservasService } from 'src/app/service/reservas.service';
 
@@ -17,7 +18,8 @@ export class ReservaFormComponent {
     private formBuilder: FormBuilder,
     private service: ReservasService,
     private snackBar: MatSnackBar,
-    private location: Location
+    private location: Location,
+    private router: Router
   ) {
     this.form = formBuilder.group({
       nomeHospede: [''],
@@ -62,5 +64,7 @@ export class ReservaFormComponent {
 
   onSuccess() {
     this.snackBar.open('Reserva feita com sucesso!', '', { duration: 4000 });
+    this.router.navigateByUrl('/reserva/list');
+
   }
 }
